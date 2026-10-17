@@ -1,0 +1,295 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            padding: 0 6px;
+        }
+
+        .signup {
+            height: 19px;
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+        }
+
+        .signup a {
+            color: #1684ff;
+            text-decoration: none;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 675px;
+            height: 482px;
+            display: flex;
+            overflow: hidden;
+            border: 2px solid #1684ff;
+            border-radius: 2px;
+        }
+
+        /* Left login panel */
+        .login-panel {
+            width: 40.3%;
+            background: #06235f;
+            color: white;
+            padding: 43px 48px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            flex-shrink: 0;
+            border-radius: 14px 0 0 14px;
+        }
+
+        /* Logo */
+        .logo {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            white-space: nowrap;
+        }
+
+        .logo-icon {
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            background: #a5d93b;
+            color: white;
+            font-size: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #b5ed47;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -1.5px;
+            color: #8dcc36;
+        }
+
+        .logo-text span {
+            color: #0877c9;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 21px;
+            white-space: nowrap;
+        }
+
+        /* Form fields */
+        .login-form {
+            width: 100%;
+        }
+
+        .input-box {
+            height: 24px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background: #102f6b;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            padding: 0 8px;
+        }
+
+        .input-box .icon {
+            font-size: 10px;
+            color: #6bc8f3;
+            margin-right: 8px;
+        }
+
+        .input-box input {
+            width: 100%;
+            min-width: 0;
+            outline: none;
+            border: none;
+            color: #ffffff;
+            background: transparent;
+            font-size: 8px;
+        }
+
+        .input-box input::placeholder {
+            color: #9db3d8;
+        }
+
+        .eye {
+            font-size: 11px;
+            color: #9db3d8;
+            cursor: pointer;
+        }
+
+        .forgot {
+            display: block;
+            text-align: right;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 8px;
+            margin: 5px 0 30px;
+        }
+
+        .sign-in {
+            width: 100%;
+            height: 22px;
+            background: #2055bc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        .sign-in:hover {
+            background: #3470dc;
+        }
+
+        /* OR separator */
+        .separator {
+            width: 112%;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 17px 0;
+            color: #9db3d8;
+            font-size: 9px;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: "";
+            height: 1px;
+            background: #38527e;
+            flex: 1;
+        }
+
+        /* Social login buttons */
+        .social-login {
+            width: 100%;
+        }
+
+        .social-btn {
+            width: 100%;
+            height: 22px;
+            border: none;
+            border-radius: 5px;
+            background: #102f6b;
+            color: white;
+            font-size: 8px;
+            margin-bottom: 4px;
+            cursor: pointer;
+        }
+
+        .social-btn:hover {
+            background: #194080;
+        }
+
+        .google {
+            color: #4285f4;
+            font-weight: bold;
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
+        .facebook {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: #4267a9;
+            color: white;
+            font-weight: bold;
+            font-size: 9px;
+            margin-right: 4px;
+        }
+
+        .apple {
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
+        .create-account {
+            margin-top: 10px;
+            font-size: 8px;
+            white-space: nowrap;
+            color: #b5c5e2;
+        }
+
+        .create-account a {
+            color: #718fca;
+            text-decoration: none;
+        }
+
+        /* Right-side image */
+        .image-panel {
+            flex: 1;
+            min-width: 0;
+            background-image: url(
+                "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=90"
+            );
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-radius: 0 0 14px 0;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+            body {
+                padding: 0;
+            }
+
+            .login-container {
+                height: auto;
+                min-height: 500px;
+            }
+
+            .login-panel {
+                width: 100%;
+                padding: 45px 35px 30px;
+                border-radius: 12px;
+            }
+
+            .image-panel {
+                display: none;
+            }
+
+            .logo {
+                margin-bottom: 25px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            .input-box {
+                height: 36px;
+            }
+
+            .sign-in {
+                height: 34px;
+                font-size: 12px;
+            }
+
+            .social-btn {
+                height: 32px;
+                font-size: 10px;
+            }
+
+            .create-account {
+                font-size: 10px;
+            }
+        }
